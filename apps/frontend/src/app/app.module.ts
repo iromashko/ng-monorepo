@@ -8,7 +8,18 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled', relativeLinkResolution: 'legacy' }),
+    RouterModule.forRoot(
+      [
+        {
+          path: 'home-feature',
+          loadChildren: () =>
+            import('@monorepo3/home/feature').then(
+              (module) => module.HomeFeatureModule
+            ),
+        },
+      ],
+      { initialNavigation: 'enabled', relativeLinkResolution: 'legacy' }
+    ),
   ],
   providers: [],
   bootstrap: [AppComponent],
