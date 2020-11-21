@@ -25,7 +25,14 @@
               "apps/frontend/src/favicon.ico",
               "apps/frontend/src/assets"
             ],
-            "styles": ["apps/frontend/src/styles.scss"],
+            "styles": [
+              "apps/frontend/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "libs/shared/styles/src"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -83,7 +90,10 @@
               "apps/frontend/tsconfig.spec.json",
               "apps/frontend/tsconfig.editor.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/frontend/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/frontend/**/*"
+            ]
           }
         },
         "test": {
@@ -116,8 +126,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/frontend-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/frontend-e2e/**/*"]
+            "tsConfig": [
+              "apps/frontend-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/frontend-e2e/**/*"
+            ]
           }
         }
       }
@@ -135,7 +150,10 @@
               "libs/home/feature/tsconfig.lib.json",
               "libs/home/feature/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/home/feature/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/home/feature/**/*"
+            ]
           }
         },
         "test": {
