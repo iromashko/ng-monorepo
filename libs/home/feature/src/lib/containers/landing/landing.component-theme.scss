@@ -16,6 +16,10 @@
 
     .email-control {
       background-color: $background-color;
+
+      &__input {
+        background-color: transparent;
+      }
     }
   }
 }
