@@ -8,4 +8,24 @@
     url(/assets/home/world_travel.png);
 
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.landing-header {
+  flex: 0 0 50px;
+}
+
+.landing-body {
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup {
+  flex: 0 0 auto;
 }
